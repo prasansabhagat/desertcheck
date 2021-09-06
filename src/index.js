@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
+const you = "Prasansa";
+const currentDate = new Date();
+const year = currentDate.getFullYear();
+const img = "https://picsum.photos/300";
+
+//ReactDOM.render(WHERE TO SHOW, WHAT TO SHOW);
+ReactDOM.render(<h1>Hello World and!</h1>, document.getElementById('root'));
+//this renderdom method takes only one input so to pass suppose h1 and a p use div instead
+//contentEditable="true" --allows us edit on the server too---___check html global attributes for more like this
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+<div>
+<img src = {img}></img><img src = {img + "?grayscale"}></img>
+<h3 style = {{color:"blue", size:"1px"}}>Created by {you}</h3>
+<h4>copyright {year}</h4>
+</div>, document.getElementById("root"));
