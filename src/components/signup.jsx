@@ -13,7 +13,7 @@ export class Sign extends Component {
   
   <Form.Group className="mb-3">
     <Form.Label>Birth Date</Form.Label>
-    <Form.Control type="number" placeholder="09-10-1996" />
+    <Form.Control type="date" placeholder="09-10-1996" />
   </Form.Group>
   
   <Form.Group className="mb-3"  >
@@ -50,11 +50,11 @@ export class Sign extends Component {
 
   <Form.Group className="mb-3"  >
     <Form.Label>Phone Number</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
+    <Form.Control type="text" placeholder="123-456-789" />
   </Form.Group>
   
   <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
+      We'll never share your information with anyone else.
     </Form.Text><br />
     
   <Button type="submit">
