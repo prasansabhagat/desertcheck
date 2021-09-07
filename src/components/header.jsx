@@ -6,7 +6,7 @@ function Header(){
 
     return <Navbar>
   <Container>
-    <Navbar.Brand href="#home" className="textstyle">Desert Check</Navbar.Brand>
+    <Navbar.Brand href="#home" className="textstyle">Dessert Check</Navbar.Brand>
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
       <Button className="navBar"

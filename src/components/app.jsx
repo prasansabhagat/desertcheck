@@ -13,7 +13,6 @@ function App(){
                 <Route exact path="/signup" component={ Sign }></Route>
                 <Carousels></Carousels>
             </Switch>
-            <Footer></Footer>
         </Router>
     );
 }
